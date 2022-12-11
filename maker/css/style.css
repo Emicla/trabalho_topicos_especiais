@@ -963,6 +963,12 @@ ul.location_form li a {
      padding-right: 60px;
 }
 
+footer .contatos{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
 ul.location_icon {
      font-family: 'Open Sans', sans-serif;
      text-align: center;
