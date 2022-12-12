@@ -28,6 +28,10 @@
 @import url(css/nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+@keyframes aparecer {
+     0% {opacity: 0;}
+     100% {opacity: 1;}
+}
 
 * {
      box-sizing: border-box !important;
@@ -111,7 +115,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -156,7 +160,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -682,13 +686,43 @@ button {
      margin: 0;
 }
 
+.team_box img {
+     border-radius: 10px;
+     border: 1px solid #00f3ff;
+}
+
+.team_box button {
+     padding: 19px 30px;
+     border-radius: 10px;
+     background: #00001a;
+     color: aqua;
+     border: 1px solid aqua;
+     position: relative;
+     top: -25px;
+}
+
+.team_box button:hover {
+     background: #000032;
+}
+
+.team_box button:active {
+     background: #202093;
+}
+
 .social_box {
      background: #fff;
      margin: -67px 20px 0px 20px;
      z-index: 999;
      position: relative;
      padding: 23px 0;
+     border-radius: 8px;
+     animation-name: aparecer;
+     animation-duration: 1s;
 }
+
+/* .social_box .dados-dev {
+     display: none;
+} */
 
 .team .social_box h3 {
      color: #37139a;
@@ -963,7 +997,7 @@ ul.location_form li a {
      padding-right: 60px;
 }
 
-footer .contatos{
+footer .contatos {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -1072,4 +1106,6 @@ ul.social_icon li a:hover {
 
 /** end footer **/
 
-
+.invisivel {
+     display: none;
+}
